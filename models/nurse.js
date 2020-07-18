@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       nurse.belongsToMany(models.patient, {
-        through: "onDuties",
+        through: "onDuties", //This entity called nuse will be inside the JOin table 
         foreignKey: "nurseId"
       })
     }

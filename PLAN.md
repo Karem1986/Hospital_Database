@@ -8,7 +8,6 @@ Note: migration files have the model name in plural
 -Nurses
 [x] model & migration files 
 
-
 -onDuty-Join Table
 [x] model & migration files 
 
@@ -30,3 +29,32 @@ Add seeds for:
 [x] onDuties 
 
 Create queries--> queries.js [] ---Done with Sequelize! 
+
+//ROUTING STEPS:
+1. Create index.js [x]
+2. npm install express [x]
+2. Start a simple express server [x]
+3. Create a simple GET route [x]
+4. Test with httpie [x]
+if all works--> Start building the routes we need to access our 
+database (REST routes)
+
+//ROUTES GET/POST as in https://reader.codaisseur.com/courses/backend-bootcamp/04-advanced-apis/02-rest
+1. Create a folder "routers" []
+2. Inside create files according to our data: 
+- doctors.js [x]
+- patients.js []
+- onDuties.js []
+3. Inside those files: []
+-- Import the Router class from express.
+-- Import the corresponding model.
+-- Instantiate a router.
+-- Register a GET / route that responds with all the doctors or patients.
+-- Export the router.
+4. Index.js do the following: 
+- Export parser middleware before routes [x]
+-- set up routes with app.use [x]
+
+5. Login and authentication--https://reader.codaisseur.com/courses/backend-bootcamp/04-advanced-apis/04-jwt 
+--Hash passwords for customers [x]
+--Finalize login endpoint [] https://reader.codaisseur.com/courses/backend-bootcamp/04-advanced-apis/07-login 

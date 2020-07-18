@@ -5,20 +5,15 @@ const Patient = require("./models").patient
 
 
 //Get all nurses
-
 const getAllNurses = async () => {
     const allmynurses = await Nurse.findAll();
     // console.log("testing customers:", customers)
     const plainNurses = allmynurses.map(c => c.get({ plain: true }));
     // console.log('testing plainOrders:', plainOrders)//returns orders and their customers
     console.log(plainNurses);
-
-
 }
 //To get all nurses Test in terminal: node queries.js
-
 // getAllNurses();
-
 
 //get all doctors 
 const getAllDoctors = async () => {
@@ -46,8 +41,6 @@ async function getDoctorById(key) {
 // getDoctorById(1).then(d => console.log("This doctor is ID number:", d))
 
 //Get all patients with their doctors 
-
-
 const getPatientswithDoctors = async () => {
     const results = await Patient.findAll({ include: [Doctor] });
 
@@ -57,4 +50,5 @@ const getPatientswithDoctors = async () => {
     //Test in terminal: node queries.js
 }
 getPatientswithDoctors();
+
 

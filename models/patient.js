@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      patient.belongsTo(models.doctor) //a patient can only have one doctor with belongsTo
+      patient.belongsTo(models.doctor)//a patient can only have one doctor with belongsTo
     }
   };
   patient.init({

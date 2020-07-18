@@ -11,8 +11,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      onDuty.belongsTo(models.doctor)
-      onDuty.belongsTo(models.nurse)
+      //JOIN TABLE
+      onDuty.belongsTo(models.doctor)//doctorId inside onDuty table
+      onDuty.belongsTo(models.nurse)//nurseId inside onDUty table 
     }
   };
   onDuty.init({
