@@ -22,3 +22,12 @@ Add Relationships(separate migration)
 Join table:
 >Doctors on duty---belongs to--> doctorId on onDuty table [x]
 >Nurses on duty---belongs to--> nurseId on onDuty table [x]
+
+Add seeds for:
+[x] patients
+[x] doctors
+[x] nurses
+[x]onDuties 
+
+
+Create queries--> queries.js [x] ---Done with Sequelize! 
