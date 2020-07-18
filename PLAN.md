@@ -27,7 +27,6 @@ Add seeds for:
 [x] patients
 [x] doctors
 [x] nurses
-[x]onDuties 
+[x] onDuties 
 
-
-Create queries--> queries.js [x] ---Done with Sequelize! 
+Create queries--> queries.js [] ---Done with Sequelize! 
