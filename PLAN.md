@@ -57,4 +57,4 @@ database (REST routes)
 
 5. Login and authentication--https://reader.codaisseur.com/courses/backend-bootcamp/04-advanced-apis/04-jwt 
 --Hash passwords for customers [x]
---Finalize login endpoint [] https://reader.codaisseur.com/courses/backend-bootcamp/04-advanced-apis/07-login 
+--Finalize login endpoint [x] https://reader.codaisseur.com/courses/backend-bootcamp/04-advanced-apis/07-login 
